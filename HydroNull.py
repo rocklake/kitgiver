@@ -36,7 +36,7 @@ api = api_c()
 
 def kit(name, api):
     try:
-        kitf = open(ApiPath + "kit/" + name, "r")
+        kitf = open(ApiPath + "kits/" + name, "r")
         for line in kitf.readlines():
             if line.startswith("/"):
                 line = line.replace("/", "")
